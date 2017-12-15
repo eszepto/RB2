@@ -1,5 +1,4 @@
 //---------------------------------Arduino UNO----&&&&---Serial baud 115200---------------------------
-
 //----------------------------------Parameter------------------------------------------------------------------ 
 
   int blackline = 610; //  from IRsensor          *** not define yet
@@ -280,14 +279,14 @@
 
       if(count == 2 && terns == 3)
       {
-        delay(165);//150
+       delay(165);//150
         
-        terns +=1 ;
+       terns +=1 ;
         
-        light_out();
+       light_out();
        
-        digitalWrite(4,HIGH);
-        digitalWrite(5,HIGH);
+       digitalWrite(4,HIGH);
+       digitalWrite(5,HIGH);
        digitalWrite(1,HIGH);
        digitalWrite(2,LOW);
        
@@ -299,8 +298,8 @@
        
        motor_stop();
        delay(200);
-        count = 0;
-        return 1;
+       count = 0;
+       return 1;
         
         
       }
@@ -315,9 +314,7 @@
       {
         motor_stop();
         terns += 1;
-        
-       
-        // light_out();
+        light_out();
         motor_run();
         delay(10);
         motor_end();  
@@ -421,19 +418,8 @@
 
     fan_Off();
     
-    //ambient_test();
+   //ambient_test();
    //blackline_test();
-   
-    /*
-    analogWrite(6,70); //right
-    analogWrite(3,55); //left
-    
-    digitalWrite(1,HIGH);
-    digitalWrite(2,LOW); 
-    
-    digitalWrite(4,HIGH);
-    digitalWrite(5,LOW);
-    */
    // light_out();
    // turn_right();
    // motor_end();
