@@ -18,7 +18,7 @@ int doubledotpause()   //11 as SW to pause
        delay(10); 
        while(digitalRead(11) == LOW || digitalRead(12) == LOW){} //
        i++;
-       if(i>8)i=3;
+       if(i>8)i=3; //
       }
     delay(300);
   
