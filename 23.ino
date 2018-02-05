@@ -1,5 +1,5 @@
 int i=3;
-int doubledotpause()   //11 as SW to pause
+int doubledotpause()   //11,12 as SW to pause
 {
     
     digitalWrite(i,HIGH);
