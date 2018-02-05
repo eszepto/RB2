@@ -31,3 +31,14 @@ int doubledotpause()   //11 as SW to pause
     
     }
 }
+
+void setup()
+{
+    PORTD = 0xFF;
+    pinMode(11,INPUT_PULLUP);
+    pinMode(12,INPUT_PULLUP);
+}
+void loop()
+{
+    doubledotpause();
+}
