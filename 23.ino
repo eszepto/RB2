@@ -27,6 +27,7 @@ int doubledotpause()   //11 as SW to pause
 
 void setup()
 {
+    Serial.begin(115200);
     PORTD = 0xFF;
     pinMode(11,INPUT_PULLUP);
     pinMode(12,INPUT_PULLUP);
