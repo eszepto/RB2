@@ -93,6 +93,7 @@ void loop()
 
 void pause()
 {
+  while(digitalRead(2) == 0);
   while(true)
   {
     if(digitalRead(2) == 0)
