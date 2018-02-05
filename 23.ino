@@ -13,15 +13,15 @@ int doubledotpause()   //11 as SW to pause
         }
     }
 
-    if(digitalRead(11) == LOW) 
+    if(digitalRead(11) == LOW && digitalRead(12) == LOW)  //
     {   
      delay(10); 
-     while(digitalRead(11) == LOW){} 
+     while(digitalRead(11) == LOW || digitalRead(12) == LOW){} //
      while(true)
      {
-       if(digitalRead(11) == LOW) 
+       if(digitalRead(11) == LOW && digitalRead(12) == LOW)  //
         {
-            while(digitalRead(11) == LOW){}
+            while(digitalRead(11) == LOW || digitalRead(12) == LOW){} //
             break;
         }
                 
